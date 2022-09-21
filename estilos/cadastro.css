@@ -1,1 +1,113 @@
 @charset "UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background: #000000 url(../imagens/media/pexels-rfstudio-3621104.jpg) center center no-repeat fixed;
+    background-size: cover;
+
+}
+
+section.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+div.card {
+    background-color: #ffffffb6;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #00000071;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+    width: 400px;
+}
+
+h1, h2 {
+    color: #143800;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #143800;
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 20px;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    border-radius: 0;
+}
+
+.label-float {
+    position: relative;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #396323;
+}
+
+.label-float label {
+    color: #143800;
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s ease-out;
+}
+
+.label-float input:focus + label, 
+.label-float input:valid + label {
+    font-size: 13px;
+    margin-top: 0px;
+    color: #396323;
+}
+
+button {
+    width: 100%;
+    background-image: linear-gradient(#38551A, #143800);
+    border: 0;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: .9em;
+    margin: 5px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 27px;
+    right: 10px;
+    cursor: pointer;
+    color: #143800;
+}

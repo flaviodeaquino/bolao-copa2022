@@ -6,32 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="estilos/cadastro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
     <main>
-        <section>
-            <h1>Bolão da Copa 2022</h1>
-            <div id="formulario">
+        <section class="container"> 
+            <div class="card">
+                <h1>Bolão da Copa 2022</h1>
+                <h2>Cadastro</h1>
                 <form action="cadastro.php" method="POST" autocomplete="on"></form>
-                    <p class="entradas">
-                        <label for="iemail">E-mail:</label>
+                    <div class="label-float">
+                        <input type="text" name="nome" id="inome" autocomplete="nome" required>
+                        <label for="iemail">Nome: </label>
+                    </div>
+                    <div class="label-float">
                         <input type="email" name="email" id="iemail" autocomplete="email" required>
-                    </p>
-                    <p class="entradas">
+                        <label for="iemail">E-mail: </label>
+                    </div>
+                    <div class="label-float">
+                        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="20" placeholder="mínimo de 8 letras">
                         <label for="isen">Senha: </label>
-                        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="20" placeholder="mínimo de 8 letras" autocomplete="current-password">
-                    </p>
-                    <p>
-                        <input type="submit" value="Entrar" class="button-70" role="button">
-                    </p>
+                        <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="label-float">
+                        <input type="password" name="confirmsen" id="confirmsen" required minlength="8" maxlength="20" size="20" placeholder="mesma senha anterior">
+                        <label for="confirmsen">Confirmar senha: </label>
+                        <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="justify-center">
+                        <button>Cadastrar</button>
+                    </div>
                 </form>
-                <p><a href="#">Esqueceu sua senha?</a></p>
-                <p>Não tem conta? <a href="#">Cadastre-se!</a></p>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Site desenvolvido por Flávio de Aquino Ferreira</p>
-    </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
