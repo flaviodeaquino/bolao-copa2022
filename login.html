@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/login.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <h1>Bolão da Copa 2022</h1>
+            <div id="formulario">
+                <form action="cadastro.php" method="POST" autocomplete="on"></form>
+                    <h2>Fazer login</h1>
+                    <p class="entradas">
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" autocomplete="email" required>
+                    </p>
+                    <p class="entradas">
+                        <label for="isen">Senha: </label>
+                        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="20" placeholder="mínimo de 8 letras" autocomplete="current-password">
+                    </p>
+                    <p>
+                        <input type="submit" value="Entrar" class="button-70" role="button">
+                    </p>
+                </form>
+                <p><a href="#">Esqueceu sua senha?</a></p>
+                <p>Não tem conta? <a href="#">Cadastre-se!</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
