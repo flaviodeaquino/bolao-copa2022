@@ -10,10 +10,108 @@
 body, html {
     background: #000000 url(../imagens/media/pexels-dom-le-roy-3991976.jpg) center center no-repeat fixed;
     background-size: cover;
-    height: 92.5vh;
-    width: 100vw;
+
 }
 
+section.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+div.card {
+    background-color: #ffffffb6;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #00000071;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+h1, h2, p {
+    color: #143800;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.label-float input {
+    width: 90%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #143800;
+    background-color: transparent;
+    outline: none;
+    margin-bottom: 20px;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    border-radius: 0;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #396323;
+}
+
+.label-float label {
+    color: #143800;
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s ease-out;
+}
+
+.label-float input:focus + label {
+    font-size: 13px;
+    margin-top: 0px;
+    color: #396323;
+}
+
+button {
+    background-image: linear-gradient(#38551A, #143800);
+    border: 0;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: .9em;
+    margin: 5px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*
 section#login {
     position: absolute;
     top: 50%;
@@ -60,11 +158,10 @@ a {
     text-decoration: none;
 }
 
-
-/* <!-- HTML !-->
+<!-- HTML !-->
 <button class="button-70" role="button">Button 70</button> */
 
-/* CSS */
+/* CSS 
 .button-70 {
   background-image: linear-gradient(#38551A, #143800);
   border: 0;
@@ -80,7 +177,7 @@ a {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-}
+} 
 
 footer {
     background-color: #2F5A0C;
@@ -89,3 +186,4 @@ footer {
     font-size: 0.8em;
     padding: 5px;
 }
+*/

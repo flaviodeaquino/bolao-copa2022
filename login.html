@@ -10,25 +10,30 @@
 </head>
 <body>
     <main>
-        <section id="login">
-            <h1>Bolão da Copa 2022</h1>
-            <div id="formulario">
+        <section class="container">
+            
+            <div class="card">
+                <h1>Bolão da Copa 2022</h1>
+                <h2>Fazer login</h1>
                 <form action="cadastro.php" method="POST" autocomplete="on"></form>
-                    <h2>Fazer login</h1>
-                    <p class="entradas">
-                        <label for="iemail">E-mail:</label>
+                    <div class="label-float">
                         <input type="email" name="email" id="iemail" autocomplete="email" required>
-                    </p>
-                    <p class="entradas">
-                        <label for="isen">Senha: </label>
+                        <label for="iemail">E-mail</label>
+                    </div>
+                    <div class="label-float">
                         <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="20" placeholder="mínimo de 8 letras" autocomplete="current-password">
-                    </p>
-                    <p>
-                        <input type="submit" value="Entrar" class="button-70" role="button">
-                    </p>
+                        <label for="isen">Senha: </label>
+                    </div>
+                    <div class="justify-center">
+                        <button>Entrar</button>
+                    </div>
                 </form>
-                <p><a href="#">Esqueceu sua senha?</a></p>
-                <p>Não tem conta? <a href="#">Cadastre-se!</a></p>
+                <p>
+                    <a href="#">Esqueceu sua senha?</a>
+                </p>
+                <p>Não tem conta? 
+                    <a href="#">Cadastre-se!</a>
+                </p>
             </div>
         </section>
     </main>
