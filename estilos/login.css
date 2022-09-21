@@ -51,7 +51,7 @@ a:hover {
 }
 
 .label-float input {
-    width: 90%;
+    width: 100%;
     padding: 5px 5px;
     display: inline-block;
     border: 0;
@@ -67,7 +67,8 @@ a:hover {
 
 .label-float {
     position: relative;
-    padding-top: 13px;
+    justify-content: center;
+    padding-top: 20px;
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -92,6 +93,7 @@ a:hover {
 }
 
 button {
+    width: 100%;
     background-image: linear-gradient(#38551A, #143800);
     border: 0;
     border-radius: 4px;
