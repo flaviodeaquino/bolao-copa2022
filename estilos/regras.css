@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #BFD7AE;
+    --cor1: #91BF53;
+    --cor2: #5E8E31;
+    --cor3: #2F5A0C;
+    --cor4: #1D4103;
+
+    --fonte-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-padrao);
+    box-sizing: border-box; 
+}
+
+body, html {
+    background: black url(../imagens/media/pexels-omar-ramadan-9407020.jpg) no-repeat fixed;
+    background-size: cover;  
+}
+
+header {
+    background-image: linear-gradient(#2F5A0C, #1D4103 );
+}
+
+header > h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.250);
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    margin: auto;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.250);
+}
+
+nav {
+    display: flex;
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.150);
+    justify-content: space-between;
+}
+
+nav > a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor0);
+    color: var(--cor4);
+}
+
+main {
+    background-color: #ffffffb6;
+    max-width: 400px;
+    padding-left: 40px;
+    padding-right: 20px;
+    margin: auto;
+    border-radius: 15px;
+    line-height: 1.5;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+main h2 {
+    padding-top: 10px;
+}
+
+main p {
+    padding: 10px;
+}

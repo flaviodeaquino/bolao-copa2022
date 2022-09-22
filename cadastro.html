@@ -15,27 +15,31 @@
             <div class="card">
                 <h1>Bolão da Copa 2022</h1>
                 <h2>Cadastro</h1>
+
+                <div id="msgError"></div>
+                <div id="msgSuccess"></div>             
+
                 <form action="cadastro.php" method="POST" autocomplete="on"></form>
                     <div class="label-float">
-                        <input type="text" name="nome" id="inome" autocomplete="nome" required>
-                        <label for="iemail">Nome: </label>
+                        <input type="text" name="nome" id="inome" autocomplete="nome" required minlength="3">
+                        <label id="labelnome" for="iemail">Nome: </label>
                     </div>
                     <div class="label-float">
                         <input type="email" name="email" id="iemail" autocomplete="email" required>
-                        <label for="iemail">E-mail: </label>
+                        <label id="labelemail" for="iemail">E-mail: </label>
                     </div>
                     <div class="label-float">
-                        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="20" placeholder="mínimo de 8 letras">
-                        <label for="isen">Senha: </label>
+                        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="20" placeholder="mínimo de 8 letras">
+                        <label id="labelsenha" for="isenha">Senha: </label>
                         <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
                     </div>
                     <div class="label-float">
-                        <input type="password" name="confirmsen" id="confirmsen" required minlength="8" maxlength="20" size="20" placeholder="mesma senha anterior">
-                        <label for="confirmsen">Confirmar senha: </label>
-                        <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                        <input type="password" name="confirmsenha" id="iconfirmsenha" required minlength="8" maxlength="20" size="20" placeholder="mesma senha anterior">
+                        <label id="labelconfirmsenha" for="confirmsenha">Confirmar senha: </label>
+                        <i id="verconfirmsenha" class="fa fa-eye" aria-hidden="true"></i>
                     </div>
                     <div class="justify-center">
-                        <button>Cadastrar</button>
+                        <button onclick="cadastrar()">Cadastrar</button>
                     </div>
                 </form>
             </div>
