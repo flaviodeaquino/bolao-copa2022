@@ -13,15 +13,16 @@
 * {
     margin: 0px;
     padding: 0px;
-}
-
-body, html {
-    background-color: var(--cor0);
     font-family: var(--fonte-padrao);
 }
 
+body, html {
+    background: black url(../imagens/media/pexels-dom-le-roy-3991976.jpg) no-repeat fixed;
+    background-size: cover;   
+}
+
 header {
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3), var(--cor4));
+    background-image: linear-gradient(#2F5A0C, #1D4103 );
     min-height: 100px;
     text-align: center;
     padding-top: 20px;
