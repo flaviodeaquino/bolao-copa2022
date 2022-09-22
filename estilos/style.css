@@ -17,7 +17,7 @@
 }
 
 body, html {
-    background: black url(../imagens/media/pexels-dom-le-roy-3991976.jpg) no-repeat fixed;
+    background: black url(../imagens/media/pexels-dom-le-roy-3991976.jpg) center center no-repeat fixed;
     background-size: cover;   
 }
 
@@ -70,10 +70,37 @@ nav > a:hover {
     color: var(--cor4);
 }
 
-footer {
-    background-color: #2F5A0C;
-    color: white;
+main {
+    background-color: #ffffffe3;
+    max-width: 400px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 15px;
+    line-height: 1.5;
+}
+
+main h1 {
     text-align: center;
-    font-size: 0.8em;
-    padding: 5px;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+main h2 {
+    padding-top: 10px;
+}
+
+main p {
+    padding: 10px;
+}
+
+ul {
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    main {
+        max-width: 800px;
+    }
 }
